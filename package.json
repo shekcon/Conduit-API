@@ -1,0 +1,27 @@
+{
+  "name": "conduit-api",
+  "version": "1.0.0",
+  "description": "A Rest API for shared knowledge web",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "pm2": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shekcon/Conduit-API.git"
+  },
+  "author": "Shekcon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shekcon/Conduit-API/issues"
+  },
+  "homepage": "https://github.com/Shekcon/Conduit-API#readme"
+}
