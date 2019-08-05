@@ -1,0 +1,24 @@
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "lsang@gmail.com",
+    "password": "123456789"
+}
+
+###
+
+POST http://localhost:3000/api/users/lsang/follow HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNDcxNTg0ZWEzYmYwNWE2MGRmMWUxYSIsInVzZXJuYW1lIjoic2hla2NvbiIsImV4cCI6MTU3MDE1ODQyOSwiaWF0IjoxNTY0OTc0NDI5fQ.gBB53BrzVVX4_D0c1MbXJiG882XUsyDuWgcxX8oX6AU
+
+###
+
+POST  http://localhost:3000/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "lsang",
+    "password": "123456789",
+    "email": "lsang@gmail.com",
+    "bio": "Back-end developer"
+}
